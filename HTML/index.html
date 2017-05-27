@@ -12,25 +12,9 @@
 
 	<!-- jQuery Files -->
 	<script src="js/lib/jquery.min.js"></script>
+
+    <!-- Handlebars Library -->
     <script src="js/lib/handlebars.min.js"></script>
-
-    <script id="gallery-item-template" type="text/x-handlebars-template">
-        <div class="col-md-4 {{classes}}">
-            <a href="{{path}}" class="zoom">
-                <div class="grid-item">
-                    <div class="overlay">
-                        <div class="inner-overlay">
-                            <h4>{{heading}}</h4>
-                            <span>{{description}}</span>
-                        </div>
-                    </div>
-                    <img src="{{path}}" class="img-responsive" alt="...">
-                </div>
-            </a>
-        </div>
-    </script>
-
-    <script src="js/my.js"></script>
 
 	<!-- Royal Preloader -->
 	<script type="text/javascript" src="js/lib/royal_preloader.min.js"></script>
@@ -205,7 +189,6 @@
 	</section>
 	<!-- End About -->
 
-
     <!-- Begin photography -->
     <section id="photography" class="section-padding-work section-border-bottom">
 		<div class="container">
@@ -228,114 +211,25 @@
 			</div><!-- /.row -->
 
 			<!-- Masonry Portfolio -->
-			<div id="photography-div" class="row grid">
-                <script>My.render('photography');</script>
-
-				
-				<!-- Item 3 -->
-				<div class="col-md-4 print product">
-					<a href="images/work/3.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Roots</h4>
-									<span>Print</span>
-								</div>
-							</div>
-							<img src="images/work/3.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
-				
-				<!-- Item 4 -->
-				<div class="col-md-4 print product">
-					<a href="images/work/4.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Magazine</h4>
-									<span>Print</span>
-								</div>
-							</div>
-							<img src="images/work/4.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
-				
-				<!-- Item 5 -->
-				<div class="col-md-4 web">
-					<a href="images/work/5.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Bottle</h4>
-									<span>Product</span>
-								</div>
-							</div>
-							<img src="images/work/5.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
-				
-				<!-- Item 6 -->
-				<div class="col-md-4 product web">
-					<a href="images/work/6.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Triangle</h4>
-									<span>Web</span>
-								</div>
-							</div>
-							<img src="images/work/6.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
-				
-				<!-- Item 7 -->
-				<div class="col-md-4 product web">
-					<a href="images/work/7.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Hermes</h4>
-									<span>Web</span>
-								</div>
-							</div>
-							<img src="images/work/7.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
-				
-				<!-- Item 8 -->
-				<div class="col-md-4 web">
-					<a href="images/work/8.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Reasons</h4>
-									<span>Web</span>
-								</div>
-							</div>
-							<img src="images/work/8.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
-				
-				<!-- Item 9 -->
-				<div class="col-md-4 web video">
-					<a href="images/work/9.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Cards</h4>
-									<span>Print</span>
-								</div>
-							</div>
-							<img src="images/work/9.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
+			<div class="row grid">
+                <div class="template-item" data-template="galleryItem" data-image="work/1.jpg"
+                     data-heading="Right Sand" data-description="Product"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/2.jpg"
+                     data-heading="Polly Fox" data-description="Print"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/3.jpg"
+                     data-heading="Roots" data-description="Print"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/4.jpg"
+                     data-heading="Magazine" data-description="Print"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/5.jpg"
+                     data-heading="Bottle" data-description="Product"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/6.jpg"
+                     data-heading="Triangle" data-description="Web"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/7.jpg"
+                     data-heading="Hermes" data-description="Web"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/8.jpg"
+                     data-heading="Reasons" data-description="Web"></div>
+                <div class="template-item" data-template="galleryItem" data-image="work/9.jpg"
+                     data-heading="Cards" data-description="Print"></div>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section>
@@ -850,6 +744,25 @@
 			});
 		});
 	</script>
-	<script type="text/javascript" src="js/main.js"></script>
+
+    <script id="gallery-item-template" type="text/x-handlebars-template">
+        <div class="col-md-4 {{classes}}">
+            <a href="images/{{image}}" class="zoom">
+                <div class="grid-item">
+                    <div class="overlay">
+                        <div class="inner-overlay">
+                            <h4>{{heading}}</h4>
+                            <span>{{description}}</span>
+                        </div>
+                    </div>
+                    <img src="images/{{image}}" class="img-responsive" alt="...">
+                </div>
+            </a>
+        </div>
+    </script>
+
+    <script src="js/templates.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
