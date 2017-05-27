@@ -8,13 +8,14 @@
 	<title>Rolla | Minimal Portfolio Template</title>
 
 	<!-- Royal Preloader CSS -->
-	<link href="css/royal_preloader.css" rel="stylesheet">
+	<link href="css/lib/royal_preloader.css" rel="stylesheet">
 
 	<!-- jQuery Files -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/handlebars.min.js"></script>
 
 	<!-- Royal Preloader -->
-	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript" src="js/lib/royal_preloader.min.js"></script>
 	<script type="text/javascript">
 		Royal_Preloader.config({
 		    mode:           'number',
@@ -24,13 +25,30 @@
 	</script>
 
 	<!-- Stylesheets -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/ionicons.min.css" rel="stylesheet">
-	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lib/ionicons.min.css" rel="stylesheet">
+	<link href="css/lib/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/lib/magnific-popup.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" title="main-css">
 </head>
 <body class="royal_preloader">
+
+    <script id="gallery-item-template" type="text/x-handlebars-template">
+        <div class="col-md-4 {{classes}}">
+            <a href="{{path}}" class="zoom">
+                <div class="grid-item">
+                    <div class="overlay">
+                        <div class="inner-overlay">
+                            <h4>{{heading}}</h4>
+                            <span>{{description}}</span>
+                        </div>
+                    </div>
+                    <img src="{{path}}" class="img-responsive" alt="...">
+                </div>
+            </a>
+        </div>
+    </script>
+
 
 	<!-- Preloader -->
 	<div id="royal_preloader"></div>
@@ -810,7 +828,7 @@
 	<!-- End Footer -->
 
 	<!-- Javascript Files -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
     <script type="text/javascript">
 		/* ---- Google Maps ---- */
@@ -833,11 +851,11 @@
             });
         }
     </script>
-	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/form-validator.min.js"></script>
-	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
-	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/lib/form-validator.min.js"></script>
+	<script type="text/javascript" src="js/lib/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/lib/parallax.min.js"></script>
 	<script type="text/javascript">
 		/* ---- Portfolio Isotope ---- */
 		$(document).ready(function(){
