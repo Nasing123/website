@@ -94,7 +94,7 @@
 	});
 
     /* ---- our work gallery ---- */
-	$('#work').magnificPopup({
+	$('#photography').magnificPopup({
 		delegate: 'a.zoom',
 		type: 'image',
 		fixedContentPos: false,
@@ -209,6 +209,7 @@
 			});
 		}
 	}());
+
 }());
 
 

@@ -14,6 +14,24 @@
 	<script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/handlebars.min.js"></script>
 
+    <script id="gallery-item-template" type="text/x-handlebars-template">
+        <div class="col-md-4 {{classes}}">
+            <a href="{{path}}" class="zoom">
+                <div class="grid-item">
+                    <div class="overlay">
+                        <div class="inner-overlay">
+                            <h4>{{heading}}</h4>
+                            <span>{{description}}</span>
+                        </div>
+                    </div>
+                    <img src="{{path}}" class="img-responsive" alt="...">
+                </div>
+            </a>
+        </div>
+    </script>
+
+    <script src="js/my.js"></script>
+
 	<!-- Royal Preloader -->
 	<script type="text/javascript" src="js/lib/royal_preloader.min.js"></script>
 	<script type="text/javascript">
@@ -32,23 +50,6 @@
 	<link href="css/style.css" rel="stylesheet" title="main-css">
 </head>
 <body class="royal_preloader">
-
-    <script id="gallery-item-template" type="text/x-handlebars-template">
-        <div class="col-md-4 {{classes}}">
-            <a href="{{path}}" class="zoom">
-                <div class="grid-item">
-                    <div class="overlay">
-                        <div class="inner-overlay">
-                            <h4>{{heading}}</h4>
-                            <span>{{description}}</span>
-                        </div>
-                    </div>
-                    <img src="{{path}}" class="img-responsive" alt="...">
-                </div>
-            </a>
-        </div>
-    </script>
-
 
 	<!-- Preloader -->
 	<div id="royal_preloader"></div>
@@ -227,36 +228,9 @@
 			</div><!-- /.row -->
 
 			<!-- Masonry Portfolio -->
-			<div class="row grid">
-				<!-- Item 1 -->
-				<div class="col-md-4 product web">
-					<a href="images/work/1.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Right &amp; Sand</h4>
-									<span>Product</span>
-								</div>
-							</div>
-							<img src="images/work/1.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
+			<div id="photography-div" class="row grid">
+                <script>My.render('photography');</script>
 
-				<!-- Item 2 -->
-				<div class="col-md-4 print product">
-					<a href="images/work/2.jpg" class="zoom">
-						<div class="grid-item">
-							<div class="overlay">
-								<div class="inner-overlay">
-									<h4>Polly Fox</h4>
-									<span>Print</span>
-								</div>
-							</div>
-							<img src="images/work/2.jpg" class="img-responsive" alt="...">
-						</div>
-					</a>
-				</div><!-- /.column -->
 				
 				<!-- Item 3 -->
 				<div class="col-md-4 print product">
