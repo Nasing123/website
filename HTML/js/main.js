@@ -128,8 +128,8 @@
 		initNavbarScroll();
 		initAnimations();
 		initMobileNav();
-		initMagnificPopup('#photography');
-		initMagnificPopup('#mixed-media');
+		initMagnificPopup('photography');
+		initMagnificPopup('mixed-media');
 		initSmoothScroll();
 		initIsotope();
 	});
