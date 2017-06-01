@@ -693,7 +693,7 @@ a:focus {
 }
 
 .progress-bar {
-    background-color: #474747;
+  background-color: #474747;
 }
 
 /* =Services
@@ -862,18 +862,20 @@ blockquote .small, blockquote footer, blockquote small {
     color: #474747;
 }
 
-/* =Experience
+/* =CV
 -------------------------------------------------------------- */
-#experience h3 {
-    font-family: 'Roboto', sans-serif;
-    text-transform: capitalize;
-    font-weight: 200;
-    color: #333333;
-    display: inline;
+#cv h4 {
+    font-size: 16px;
+    line-height:1.5;
 }
 
-#experience h3 span {
-    margin-left: 30px;
+.cv-section{
+    margin-top:100px;
+}
+
+
+.job-sub-heading{
+    font-weight: 200;
 }
 
 .job-title {

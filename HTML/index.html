@@ -1,137 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="author" content="Denis Samardjiev" />
-	<meta name="description" content="Rolla | Minimal Portfolio Template">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Rolla | Minimal Portfolio Template</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Denis Samardjiev"/>
+    <meta name="description" content="Rolla | Minimal Portfolio Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rolla | Minimal Portfolio Template</title>
 
-	<!-- Royal Preloader CSS -->
-	<link href="css/lib/royal_preloader.css" rel="stylesheet">
+    <!-- Royal Preloader CSS -->
+    <link href="css/lib/royal_preloader.css" rel="stylesheet">
 
-	<!-- jQuery Files -->
-	<script src="js/lib/jquery.min.js"></script>
+    <!-- jQuery Files -->
+    <script src="js/lib/jquery.min.js"></script>
 
     <!-- Handlebars Library -->
     <script src="js/lib/handlebars.min.js"></script>
 
-	<!-- Royal Preloader -->
-	<script type="text/javascript" src="js/lib/royal_preloader.min.js"></script>
-	<script type="text/javascript">
-		Royal_Preloader.config({
-		    mode:           'number',
-		    showProgress:   false,
-		    background:     '#fff'
-		});
-	</script>
+    <!-- Royal Preloader -->
+    <script type="text/javascript" src="js/lib/royal_preloader.min.js"></script>
+    <script type="text/javascript">
+        Royal_Preloader.config({
+            mode: 'number',
+            showProgress: false,
+            background: '#fff'
+        });
+    </script>
 
-	<!-- Stylesheets -->
-	<link href="css/lib/bootstrap.min.css" rel="stylesheet">
-	<link href="css/lib/ionicons.min.css" rel="stylesheet">
-	<link href="css/lib/pe-icon-7-stroke.css" rel="stylesheet">
-	<link href="css/lib/magnific-popup.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" title="main-css">
+    <!-- Stylesheets -->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/ionicons.min.css" rel="stylesheet">
+    <link href="css/lib/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="css/lib/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" title="main-css">
 </head>
 <body class="royal_preloader">
 
-	<!-- Preloader -->
-	<div id="royal_preloader"></div>
+<!-- Preloader -->
+<div id="royal_preloader"></div>
 
-	<!-- Begin Header -->
-	<header>
+<!-- Begin Header -->
+<header>
 
-		<!-- Begin Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand scroll-top" href="#">Singer</a><span class="navbar-tagline hidden-sm">Natascha</span>
-				</div>
+    <!-- Begin Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scroll-top" href="#">Singer</a><span
+                    class="navbar-tagline hidden-sm">Natascha</span>
+            </div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about" data-id="about" class="scroll-link">About</a></li>
-                        <li><a href="#mixed-media" data-id="mixed-media" class="scroll-link">Multimedia</a></li>
-                        <li><a href="#photography" data-id="photography" class="scroll-link">Photography</a></li>
-                        <li><a href="#services" data-id="services" class="scroll-link">Services</a></li>
-                        <li><a href="#cv" data-id="cv" class="scroll-link">CV</a></li>
-                        <li><a href="#map" data-id="map" class="scroll-link">Contact</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container -->
-		</nav><!-- /.nav -->
-		<!-- End Navigation -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" data-id="about" class="scroll-link">About</a></li>
+                    <li><a href="#mixed-media" data-id="mixed-media" class="scroll-link">Multimedia</a></li>
+                    <li><a href="#photography" data-id="photography" class="scroll-link">Photography</a></li>
+                    <li><a href="#services" data-id="services" class="scroll-link">Services</a></li>
+                    <li><a href="#cv" data-id="cv" class="scroll-link">CV</a></li>
+                    <li><a href="#map" data-id="map" class="scroll-link">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.nav -->
+    <!-- End Navigation -->
 
-	</header>
-	<!-- End Header -->
-	
-	<!-- Begin Jumbotron -->
-	<div id="home" style="background-color:transparent;padding:150px 0;" class="jumbotron parallax-window" data-parallax="scroll" data-image-src="images/slide-1.jpg">
-		<div class="container">
-			<div class="row">
-				<!-- Content -->
-				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-7 col-lg-offset-0">
-					<div class="top-content bottomReveal">
-						<h2 class="text-white">Art & Code</h2>
-						<span class="divider"></span>
-						<p class="text-white">I am a munich based interdisciplinary artist, web developer and painter. Fascinated by the intersection of humans and technology and with great love for travel, nature and photography I am always searching for the next adventure.
-                        </p>
-						<p class="no-margin">
-							<a class="btn btn-clear btn-lg scroll-link" data-id="about" href="#about" role="button">About</a>
-						</p>
-					</div>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</div>
-	<!-- End Jumbotron -->
+</header>
+<!-- End Header -->
 
-
-	<!-- Begin About -->
-	<section id="about" class="section-padding section-border-bottom">
-		<div class="container">
-			<!-- Title -->
-			<div class="row mb60">
-				<div class="col-xs-12 text-center">
-					<h2></h2>
-					<span class="divider divider-center divider-dark no-margin-bottom"></span>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-
-			<!-- Row 1 - Information / ProfilePicture / Main Services -->
-			<div class="row mb40">
-				<!-- Profile Picture -->
-				<div class="col-sm-12 col-md-3 col-lg-3 leftReveal">
-                    <img src="images/about/profile.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
+<!-- Begin Jumbotron -->
+<div id="home" style="background-color:transparent;padding:150px 0;" class="jumbotron parallax-window"
+     data-parallax="scroll" data-image-src="images/slide-1.jpg">
+    <div class="container">
+        <div class="row">
+            <!-- Content -->
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-7 col-lg-offset-0">
+                <div class="top-content bottomReveal">
+                    <h2 class="text-white">Art & Code</h2>
+                    <span class="divider"></span>
+                    <p class="text-white">I am a munich based interdisciplinary artist, web developer and painter.
+                        Fascinated by the intersection of humans and technology and with great love for travel, nature
+                        and photography I am always searching for the next adventure.
+                    </p>
+                    <p class="no-margin">
+                        <a class="btn btn-clear btn-lg scroll-link" data-id="about" href="#about"
+                           role="button">About</a>
+                    </p>
+                </div>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+<!-- End Jumbotron -->
 
 
+<!-- Begin About -->
+<section id="about" class="section-padding section-border-bottom">
+    <div class="container">
+        <!-- Title -->
+        <div class="row mb60">
+            <div class="col-xs-12 text-center">
+                <h2></h2>
+                <span class="divider divider-center divider-dark no-margin-bottom"></span>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
 
-				</div><!-- /.column -->
+        <!-- Row 1 - Information / ProfilePicture / Main Services -->
+        <div class="row mb40">
+            <!-- Profile Picture -->
+            <div class="col-sm-12 col-md-3 col-lg-3 leftReveal">
+                <img src="images/about/profile.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
 
-				<!-- Information -->
-				<div class="col-sm-8 col-md-9 col-lg-9 mt40-xs mt40-sm topReveal">
-                    <h3 class="mb20">Hello World - I’m Natascha!</h3>
-                    <p class="mb20">Since I was a small child I loved painting and maths. Over the time this changed into a fascination for the fast pacing technology which is drastically changing our society - and art with it’s very reflective nature. <br>
 
-                        I have studied <b>"Art and Multimedia"</b>, an interdisciplinary study on media art and IT, afterwards I choose to take a deeper look into<b> IT studies</b>. <br>Since that time I worked in different fields where I have strengthen my skills and expertise.
-                        I worked as a <b>Video Editor, Graphic Designer with focus on UI, freelance Media-Artist and Software Developer</b>. Never being afraid to use different tools from different domains and follow unexpected ways to realize the best outcome for the projects, I always remained curious to learn more.</p>
-                    <p class="mb20">Whenever possible I take time for travel. Whenever I travel I take my camera with me. It’s the interaction with people from different cultures, and the understanding that we are all unique - but same in our essence, that thrives my wish to explore further and to capture the never-ending beauty that surrounds as all (... not to forget a small tiny little need for adventure once in a while ;).</p>
+            </div><!-- /.column -->
 
-                <div class ="row">
+            <!-- Information -->
+            <div class="col-sm-8 col-md-9 col-lg-9 mt40-xs mt40-sm topReveal">
+                <h3 class="mb20">Hello World - I’m Natascha!</h3>
+                <p class="mb20">Since I was a small child I loved painting and maths. Over the time this changed into a
+                    fascination for the fast pacing technology which is drastically changing our society - and art with
+                    it’s very reflective nature. <br>
+
+                    I have studied <b>"Art and Multimedia"</b>, an interdisciplinary study on media art and IT,
+                    afterwards I choose to take a deeper look into<b> IT studies</b>. <br>Since that time I worked in
+                    different fields where I have strengthen my skills and expertise.
+                    I worked as a <b>Video Editor, Graphic Designer with focus on UI, freelance Media-Artist and
+                        Software Developer</b>. Never being afraid to use different tools from different domains and
+                    follow unexpected ways to realize the best outcome for the projects, I always remained curious to
+                    learn more.</p>
+                <p class="mb20">Whenever possible I take time for travel. Whenever I travel I take my camera with me.
+                    It’s the interaction with people from different cultures, and the understanding that we are all
+                    unique - but same in our essence, that thrives my wish to explore further and to capture the
+                    never-ending beauty that surrounds as all (... not to forget a small tiny little need for adventure
+                    once in a while ;).</p>
+
+                <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <h5 class="heading-1 mb20">Skills</h5>
                         <div class="progress-bars-holder">
                             <!-- Bar #1 -->
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 50%;">
                                     <span class="sr-only">90% Complete</span>
                                 </div>
                             </div><!-- /.bar -->
@@ -139,7 +156,8 @@
 
                             <!-- Bar #2 -->
                             <div class="progress mt15">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 70%;">
                                     <span class="sr-only">82% Complete</span>
                                 </div>
                             </div><!-- /.bar -->
@@ -147,7 +165,8 @@
 
                             <!-- Bar #3 -->
                             <div class="progress mt15">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 80%;">
                                     <span class="sr-only">95% Complete</span>
                                 </div>
                             </div><!-- /.bar -->
@@ -155,7 +174,8 @@
 
                             <!-- Bar #4 -->
                             <div class="progress mt15">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 60%;">
                                     <span class="sr-only">60% Complete</span>
                                 </div>
                             </div><!-- /.bar -->
@@ -166,643 +186,689 @@
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <!-- Quote -->
 
-                            <h5 class="heading-1 mb20">Quote</h5>
-                            <p class="lead-sm text-light no-margin">“Live as if you were to die tomorrow. Learn as if you were to live forever.”</p>
-                            <div class="quote-author">- Mahatma Gandhi</div>
-                       <!-- /.column -->
+                        <h5 class="heading-1 mb20">Quote</h5>
+                        <p class="lead-sm text-light no-margin">“Live as if you were to die tomorrow. Learn as if you
+                            were to live forever.”</p>
+                        <div class="quote-author">- Mahatma Gandhi</div>
+                        <!-- /.column -->
                     </div>
 
                 </div>
 
 
-                </div><!-- /.column -->
+            </div><!-- /.column -->
 
-					</div><!-- /.Information -->
-				</div><!-- /.column -->
+        </div><!-- /.Information -->
+    </div><!-- /.column -->
 
-			</div><!-- /.row -->
-
-
+    </div><!-- /.row -->
 
 
-		</div><!-- /.container -->
-	</section>
-	<!-- End About -->
+    </div><!-- /.container -->
+</section>
+<!-- End About -->
 
 
+<!-- Begin Mixed Media -->
+<section id="mixed-media" class="section-padding-work section-border-bottom">
+    <div class="container">
+        <!-- Title -->
+        <div class="row mb50">
+            <div class="col-sm-12 col-md-6 col-md-offset-3 text-center filter-button-group">
+                <h2>Work</h2>
+                <span class="divider divider-center divider-dark mb30"></span>
+                <span>Filter :</span>
+                <ul class="list-work-filter list-unstyled list-inline">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".painting">Painting</li>
+                    <li data-filter=".digital">Digital</li>
+                    <li data-filter=".interactive">Interactive</li>
 
-    <!-- Begin Mixed Media -->
-    <section id="mixed-media" class="section-padding-work section-border-bottom">
-        <div class="container">
-            <!-- Title -->
-            <div class="row mb50">
-                <div class="col-sm-12 col-md-6 col-md-offset-3 text-center filter-button-group">
-                    <h2>Work</h2>
-                    <span class="divider divider-center divider-dark mb30"></span>
-                    <span>Filter :</span>
-                    <ul class="list-work-filter list-unstyled list-inline">
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".painting">Painting</li>
-                        <li data-filter=".digital">Digital</li>
-                        <li data-filter=".interactive">Interactive</li>
+                </ul>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
 
-                    </ul>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
-
-            <!-- Masonry Portfolio -->
-            <div class="row grid">
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/1.jpeg"
-                     data-classes = "painting digital" data-heading="Demoglied" data-description="Dictatorship"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/2.jpeg"
-                     data-classes = "painting digital" data-heading="Demoglied" data-description="Democracy"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/3.jpeg"
-                     data-classes = "digital" data-heading="Preception" data-description="digital collage"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/4.jpeg"
-                     data-classes = "digital" data-heading="Preception 2" data-description="digital collage"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/5.jpeg"
-                     data-classes = "digital painting" data-heading="female" data-description="digital collage"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/7.jpg"
-                     data-classes = "digital painting" data-heading="image of man" data-description="video installation for Kunsthalle Munich"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/6.jpeg"
-                     data-classes = "digital painting" data-heading="female 2" data-description="digital collage"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/8.jpg"
-                     data-classes = "painting" data-heading="image of man" data-description="video installation for Kunsthalle Munich"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/9.jpg"
-                     data-classes = "digital" data-heading="image of man" data-description="video installation for Kunsthalle Munich"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/10.png"
-                     data-classes = "interactive digital" data-heading="senseparation" data-description="
+        <!-- Masonry Portfolio -->
+        <div class="row grid">
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/1.jpeg"
+                 data-classes="painting digital" data-heading="Demoglied" data-description="Dictatorship"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/2.jpeg"
+                 data-classes="painting digital" data-heading="Demoglied" data-description="Democracy"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/3.jpeg"
+                 data-classes="digital" data-heading="Preception" data-description="digital collage"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/4.jpeg"
+                 data-classes="digital" data-heading="Preception 2" data-description="digital collage"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/5.jpeg"
+                 data-classes="digital painting" data-heading="female" data-description="digital collage"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/7.jpg"
+                 data-classes="digital painting" data-heading="image of man"
+                 data-description="video installation for Kunsthalle Munich"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/6.jpeg"
+                 data-classes="digital painting" data-heading="female 2" data-description="digital collage"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/8.jpg"
+                 data-classes="painting" data-heading="image of man"
+                 data-description="video installation for Kunsthalle Munich"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/9.jpg"
+                 data-classes="digital" data-heading="image of man"
+                 data-description="video installation for Kunsthalle Munich"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/10.png"
+                 data-classes="interactive digital" data-heading="senseparation" data-description="
                      A collaborative project discovering transpositional sensorial experiences, specificly the cross-border networking of people between virtual and real space"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/11.png"
-                     data-classes = "interactive digital" data-heading="senseparation" data-description="
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/11.png"
+                 data-classes="interactive digital" data-heading="senseparation" data-description="
                      A collaborative project discovering transpositional sensorial experiences, specificly the cross-border networking of people between virtual and real space"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/12.jpeg"
-                     data-classes = "painting" data-heading="Ocean" data-description="Acryl on Canvas"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/17.jpeg"
-                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/13.jpeg"
-                     data-classes = "painting" data-heading="female 3" data-description="Acryl on Paper"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/14.jpeg"
-                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/15.jpeg"
-                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
-                <div class="template-item" data-template="galleryItem" data-image="multimedia/16.jpeg"
-                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- End Mixed Media -->
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/12.jpeg"
+                 data-classes="painting" data-heading="Ocean" data-description="Acryl on Canvas"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/13.jpeg"
+                 data-classes="painting" data-heading="female 3" data-description="Acryl on Paper"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/14.jpeg"
+                 data-classes="painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/15.jpeg"
+                 data-classes="painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
+            <div class="template-item" data-template="galleryItem" data-image="multimedia/16.jpeg"
+                 data-classes="painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+<!-- End Mixed Media -->
 
 
-    <!-- Begin photography -->
-    <section id="photography" class="section-padding-work section-border-bottom">
-        <div class="container">
-            <!-- Title -->
-            <div class="row mb50">
-                <div class="col-sm-12 col-md-6 col-md-offset-3 text-center filter-button-group">
-                    <h2>Photography</h2>
-                    <span class="divider divider-center divider-dark mb30"></span>
-                    <span>Filter :</span>
-                    <ul class="list-work-filter list-unstyled list-inline">
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".asia">Asia</li>
-                        <li data-filter=".north-america">North America</li>
-                        <li data-filter=".central-america">Central America</li>
-                        <li data-filter=".humans">Humans</li>
-                        <li data-filter=".nature">Nature</li>
-                        <li data-filter=".bw">B/W</li>
-                    </ul>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
+<!-- Begin photography -->
+<section id="photography" class="section-padding-work section-border-bottom">
+    <div class="container">
+        <!-- Title -->
+        <div class="row mb50">
+            <div class="col-sm-12 col-md-6 col-md-offset-3 text-center filter-button-group">
+                <h2>Photography</h2>
+                <span class="divider divider-center divider-dark mb30"></span>
+                <span>Filter :</span>
+                <ul class="list-work-filter list-unstyled list-inline">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".asia">Asia</li>
+                    <li data-filter=".north-america">North America</li>
+                    <li data-filter=".central-america">Central America</li>
+                    <li data-filter=".humans">Humans</li>
+                    <li data-filter=".nature">Nature</li>
+                    <li data-filter=".bw">B/W</li>
+                </ul>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
 
-            <!-- Masonry Portfolio -->
-            <div class="row grid">
-                <div class="template-item" data-template="galleryItem" data-image="photography/1.jpg"
-                     data-classes = "asia humans bw" data-heading="Sulawesi" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/2.jpg"
-                     data-classes = "asia humans" data-heading="Bali" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/3.jpg"
-                     data-classes = "asia humans" data-heading="Night train to Bankog" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/4.jpg"
-                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/5.jpg"
-                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/7.jpg"
-                     data-classes = "north-america nature" data-heading="Wild lake" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/8.jpg"
-                     data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canda"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/9.jpg"
-                     data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/10.jpg"
-                     data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/12.jpg"
-                     data-classes = "north-america nature" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/13.jpg"
-                     data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/14.jpg"
-                     data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/15.jpg"
-                     data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/16.jpg"
-                     data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/17.jpg"
-                     data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/18.jpg"
-                     data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/19.jpg"
-                     data-classes = "central-america nature" data-heading="Playa Manuel Antonio" data-description="Costa Rica"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/20.jpg"
-                     data-classes = "central-america humans bw"data-heading="San Jose" data-description="Costa Rica"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/21.jpg"
-                     data-classes = "asia humans bw" data-heading="Mountain village" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/23.jpg"
-                     data-classes = "asia nature" data-heading="mae hong son" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/24.jpg"
-                     data-classes = "asia nature bw" data-heading="mae hong son" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/25.jpg"
-                     data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/26.jpg"
-                     data-classes = "central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/27.jpg"
-                     data-classes = "central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/28.jpg"
-                     data-classes = "central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/29.jpg"
-                     data-classes = "central-america humans bw" data-heading="Ometepe" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/30.jpg"
-                     data-classes = "central-america humans bw" data-heading="Managua" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/31.jpg"
-                     data-classes = "central-america humans bw" data-heading="Madagalpa" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/32.jpg"
-                     data-classes = "central-america humans bw" data-heading="Mountain Village" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/33.jpg"
-                     data-classes = "central-america" data-heading="Madagalpa" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/36.jpg"
-                     data-classes = "central-america humans" data-heading="Leon" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/37.jpg"
-                     data-classes = "central-america humans"data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/38.jpg"
-                     data-classes = "central-america nature" data-heading="Ometepe" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/39.jpg"
-                     data-classes = "central-america" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/40.jpg"
-                     data-classes = "central-america" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/41.jpg"
-                     data-classes = "central-america" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/42.jpg"
-                     data-classes = "central-america" data-heading="Bus Station" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/43.jpg"
-                     data-classes = "central-america" data-heading="Antigua" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/44.jpg"
-                     data-classes = "nature" data-heading="Alps" data-description="Germany"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/45.jpg"
-                     data-classes = "central-america" data-heading="Leon" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/47.jpg"
-                     data-classes = "central-america humans" data-heading="Leon" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/48.jpg"
-                     data-classes = "central-america" data-heading="Leon" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/49.jpg"
-                     data-classes = "asia nature bw" data-heading="mae hong son" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/50.jpg"
-                     data-classes = "asia humans" data-heading="Chantaburi" data-description="Tahiland"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/51.jpg"
-                     data-classes = "asia nature" data-heading="Sulawesi" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/52.jpg"
-                     data-classes = "asia humans bw" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/53.jpg"
-                     data-classes = "asia bw" data-heading="Chi Path" data-description="Cambodia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/54.jpg"
-                     data-classes = "asia humans"data-heading="Chi Path" data-description="Cambodia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/56.jpg"
-                     data-classes = "asia bw"data-heading="Tak hek" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/57.jpg"
-                     data-classes = "asia nature"data-heading="Tak hek" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/58.jpg"
-                     data-classes = "asia"data-heading="Togian Islands" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/59.jpg"
-                     data-classes = "asia humans"data-heading="Sulawesi" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/60.jpg"
-                     data-classes = "asia" data-heading="Tak hek" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/61.jpg"
-                     data-classes = "asia" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/62.jpg"
-                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/63.jpg"
-                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/64.jpg"
-                     data-classes = "asia" data-heading="Luang Prabang" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/65.jpg"
-                     data-classes = "asia humans" data-heading="on a Boat" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/66.jpg"
-                     data-classes = "asia humans" data-heading="Togian Islands" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/67.jpg"
-                     data-classes = "asia humans" data-heading="animal transport" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/82.jpg"
-                     data-classes = "asia humans" data-heading="buffalo market" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/68.jpg"
-                     data-classes = "asia humans" data-heading="traditional funeral" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/70.jpg"
-                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/71.jpg"
-                     data-classes = "central-america nature" data-heading="Crater lake" data-description="Costa Rica"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/72.jpg"
-                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/73.jpg"
-                     data-classes = "asia humans" data-heading="Chiang Mai" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/74.jpg"
-                     data-classes = "central america nature bw" data-heading="Playa Las Penitas" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/75.jpg"
-                     data-classes = "asia humans" data-heading="at traditional funeral" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/79.jpg"
-                     data-classes = "asia humans" data-heading="buffalo market" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/80.jpg"
-                     data-classes = "asia" data-heading="Siem Riep" data-description="Cambodia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="photography/84.jpg"
-                     data-classes = "asia humans" data-heading="at traditional funeral" data-description="Indonesia"></div>
-
-
-
-
-
-
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- End photography -->
-
-
-    <!-- Begin Video CTA -->
-	<section id="video-cta" class="section-padding section-border-bottom">
-		<div class="container">
-
-			<!-- Carousel -->
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center rotateLeftReveal">
-					<div class="icon-holder-circle">
-						<span class="ion-ios-play-outline"></span>
-					</div>
-					<p class="mt30 mb30 lead">At multis se probavit. Si alia sentit, <strong>inquam alia</strong> loquitur, numquam intellegam quid sentiat Itaque.</p>
-					<h4 class="spaced no-margin"><a href="http://vimeo.com/123123" class="popup-youtube">Play Video</a></h4>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-
-		</div><!-- /.container -->
-	</section>
-	<!-- End Video CTA -->
+        <!-- Masonry Portfolio -->
+        <div class="row grid">
+            <div class="template-item" data-template="galleryItem" data-image="photography/1.jpg"
+                 data-classes="asia humans bw" data-heading="Sulawesi" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/2.jpg"
+                 data-classes="asia humans" data-heading="Bali" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/3.jpg"
+                 data-classes="asia humans" data-heading="Night train to Bankog" data-description="Thailand"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/4.jpg"
+                 data-classes="asia humans" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/5.jpg"
+                 data-classes="asia humans" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/7.jpg"
+                 data-classes="north-america nature" data-heading="Wild lake" data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/8.jpg"
+                 data-classes="north-america nature bw" data-heading="banff national park"
+                 data-description="Canda"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/9.jpg"
+                 data-classes="north-america nature bw" data-heading="Willmore Wilderness Park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/10.jpg"
+                 data-classes="north-america nature bw" data-heading="Willmore Wilderness Park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/12.jpg"
+                 data-classes="north-america nature" data-heading="Willmore Wilderness Park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/13.jpg"
+                 data-classes="north-america nature bw" data-heading="banff national park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/14.jpg"
+                 data-classes="north-america nature bw" data-heading="banff national park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/15.jpg"
+                 data-classes="north-america nature bw" data-heading="banff national park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/16.jpg"
+                 data-classes="north-america nature bw" data-heading="banff national park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/17.jpg"
+                 data-classes="north-america nature bw" data-heading="banff national park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/18.jpg"
+                 data-classes="north-america nature bw" data-heading="Willmore Wilderness Park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/19.jpg"
+                 data-classes="central-america nature" data-heading="Playa Manuel Antonio"
+                 data-description="Costa Rica"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/20.jpg"
+                 data-classes="central-america humans bw" data-heading="San Jose" data-description="Costa Rica"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/21.jpg"
+                 data-classes="asia humans bw" data-heading="Mountain village" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/23.jpg"
+                 data-classes="asia nature" data-heading="mae hong son" data-description="Thailand"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/24.jpg"
+                 data-classes="asia nature bw" data-heading="mae hong son" data-description="Thailand"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/25.jpg"
+                 data-classes="north-america nature bw" data-heading="Willmore Wilderness Park"
+                 data-description="Canada"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/26.jpg"
+                 data-classes="central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/27.jpg"
+                 data-classes="central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/28.jpg"
+                 data-classes="central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/29.jpg"
+                 data-classes="central-america humans bw" data-heading="Ometepe" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/30.jpg"
+                 data-classes="central-america humans bw" data-heading="Managua" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/31.jpg"
+                 data-classes="central-america humans bw" data-heading="Madagalpa" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/32.jpg"
+                 data-classes="central-america humans bw" data-heading="Mountain Village"
+                 data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/33.jpg"
+                 data-classes="central-america" data-heading="Madagalpa" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/36.jpg"
+                 data-classes="central-america humans" data-heading="Leon" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/37.jpg"
+                 data-classes="central-america humans" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/38.jpg"
+                 data-classes="central-america nature" data-heading="Ometepe" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/39.jpg"
+                 data-classes="central-america" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/40.jpg"
+                 data-classes="central-america" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/41.jpg"
+                 data-classes="central-america" data-heading="Granada" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/42.jpg"
+                 data-classes="central-america" data-heading="Bus Station" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/43.jpg"
+                 data-classes="central-america" data-heading="Antigua" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/44.jpg"
+                 data-classes="nature" data-heading="Alps" data-description="Germany"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/45.jpg"
+                 data-classes="central-america" data-heading="Leon" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/47.jpg"
+                 data-classes="central-america humans" data-heading="Leon" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/48.jpg"
+                 data-classes="central-america" data-heading="Leon" data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/49.jpg"
+                 data-classes="asia nature bw" data-heading="mae hong son" data-description="Thailand"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/50.jpg"
+                 data-classes="asia humans" data-heading="Chantaburi" data-description="Tahiland"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/51.jpg"
+                 data-classes="asia nature" data-heading="Sulawesi" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/52.jpg"
+                 data-classes="asia humans bw" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/53.jpg"
+                 data-classes="asia bw" data-heading="Chi Path" data-description="Cambodia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/54.jpg"
+                 data-classes="asia humans" data-heading="Chi Path" data-description="Cambodia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/56.jpg"
+                 data-classes="asia bw" data-heading="Tak hek" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/57.jpg"
+                 data-classes="asia nature" data-heading="Tak hek" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/58.jpg"
+                 data-classes="asia" data-heading="Togian Islands" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/59.jpg"
+                 data-classes="asia humans" data-heading="Sulawesi" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/60.jpg"
+                 data-classes="asia" data-heading="Tak hek" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/61.jpg"
+                 data-classes="asia" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/62.jpg"
+                 data-classes="asia humans" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/63.jpg"
+                 data-classes="asia humans" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/64.jpg"
+                 data-classes="asia" data-heading="Luang Prabang" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/65.jpg"
+                 data-classes="asia humans" data-heading="on a Boat" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/66.jpg"
+                 data-classes="asia humans" data-heading="Togian Islands" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/67.jpg"
+                 data-classes="asia humans" data-heading="animal transport" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/82.jpg"
+                 data-classes="asia humans" data-heading="buffalo market" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/68.jpg"
+                 data-classes="asia humans" data-heading="traditional funeral" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/70.jpg"
+                 data-classes="asia humans" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/71.jpg"
+                 data-classes="central-america nature" data-heading="Crater lake" data-description="Costa Rica"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/72.jpg"
+                 data-classes="asia humans" data-heading="Mountain village" data-description="Laos"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/73.jpg"
+                 data-classes="asia humans" data-heading="Chiang Mai" data-description="Thailand"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/74.jpg"
+                 data-classes="central america nature bw" data-heading="Playa Las Penitas"
+                 data-description="Nicaragua"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/75.jpg"
+                 data-classes="asia humans" data-heading="at traditional funeral" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/79.jpg"
+                 data-classes="asia humans" data-heading="buffalo market" data-description="Indonesia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/80.jpg"
+                 data-classes="asia" data-heading="Siem Riep" data-description="Cambodia"></div>
+            <div class="template-item" data-template="galleryItem" data-image="photography/84.jpg"
+                 data-classes="asia humans" data-heading="at traditional funeral" data-description="Indonesia"></div>
 
 
-    <!-- Begin Services -->
-    <section id="services" class="section-padding section-border-bottom">
-        <div class="container">
-            <!-- Title -->
-            <div class="row mb60">
-                <div class="col-sm-12 col-md-6 col-md-offset-3 text-center">
-                    <h2>Services</h2>
-                    <span class="divider divider-center divider-dark"></span>
-                    <p class="lead-sm no-margin-bottom">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intellegam quid sentiat; Itaque sensibus rationem.</p>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
-
-            <!-- Row 1 - Boxes -->
-            <div class="row mb30">
-                <!-- Box 1 -->
-                <div class="col-md-4 leftReveal">
-                    <div class="services-box">
-                        <span class="light-icon pe-7s-monitor"></span>
-                        <h4 class="spaced mt20 mb20">Web/Ui Design</h4>
-                        <p class="no-margin">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intel legam quid sentiat; Itaque sensibus ratio nem adiunxit et ratione.</p>
-                    </div>
-                </div><!-- /.column -->
-
-                <!-- Box 2 -->
-                <div class="col-md-4 mt30-xs mt30-sm topReveal">
-                    <div class="services-box">
-                        <span class="light-icon pe-7s-phone"></span>
-                        <h4 class="spaced mt20 mb20">App Design</h4>
-                        <p class="no-margin">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intel legam quid sentiat; Itaque sensibus ratio nem adiunxit et ratione.</p>
-                    </div>
-                </div><!-- /.column -->
-
-                <!-- Box 3 -->
-                <div class="col-md-4 mt30-xs mt30-sm rightReveal">
-                    <div class="services-box">
-                        <span class="light-icon pe-7s-wine"></span>
-                        <h4 class="spaced mt20 mb20">Branding</h4>
-                        <p class="no-margin">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intel legam quid sentiat; Itaque sensibus ratio nem adiunxit et ratione.</p>
-                    </div>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
-
-            <!-- Row 2 - Boxes -->
-            <div class="row">
-                <!-- Box 4 -->
-                <div class="col-md-4 leftReveal">
-                    <div class="services-box">
-                        <span class="light-icon pe-7s-lock"></span>
-                        <h4 class="spaced mt20 mb20">Security</h4>
-                        <p class="no-margin">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intel legam quid sentiat; Itaque sensibus ratio nem adiunxit et ratione.</p>
-                    </div>
-                </div><!-- /.column -->
-
-                <!-- Box 5 -->
-                <div class="col-md-4 mt30-xs mt30-sm bottomReveal">
-                    <div class="services-box">
-                        <span class="light-icon pe-7s-users"></span>
-                        <h4 class="spaced mt20 mb20">Support</h4>
-                        <p class="no-margin">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intel legam quid sentiat; Itaque sensibus ratio nem adiunxit et ratione.</p>
-                    </div>
-                </div><!-- /.column -->
-
-                <!-- Box 6 -->
-                <div class="col-md-4 mt30-xs mt30-sm rightReveal">
-                    <div class="services-box">
-                        <span class="light-icon pe-7s-server"></span>
-                        <h4 class="spaced mt20 mb20">Hosting</h4>
-                        <p class="no-margin">At multis se probavit. Si alia sentit, inquam, alia loquitur, numquam intel legam quid sentiat; Itaque sensibus ratio nem adiunxit et ratione.</p>
-                    </div>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-    <!-- End Services -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+<!-- End photography -->
 
 
+<!-- Begin CV -->
+<section id="cv" class="section-padding section-border-bottom">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row mb50">
+            <div class="col-sm-12 col-md-6 col-md-offset-3 text-center">
+                <h2>CV</h2>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+
+        <!-- start education -->
+        <div class="row cv-section">
+            <div class="col-sm-4">
+                <h4>Education</h4>
+            </div>
+
+            <div class="col-sm-8">
+                <h4>
+                    <span class="exp-badge badge">2015 - now </span>
+                    Computer Science
+                    <br>
+                    <span class="text-light job-sub-heading">LMU - Munich</span>
+                    <br>
+                </h4>
+
+                <div>
+                    <p> pursued Qualification: Bachelor of Science
+                    <p>
+                    <hr class="mt40 mb20">
+                </div>
+
+                <h4>
+                    <span class="exp-badge badge">2011 - 2015 </span>
+                    Art and Multimedia
+                    <br>
+                    <span class="job-title spaced text-light">LMU - Munich</span><br>
+                </h4>
+                <div>
+                    <p>Bachelor of Arts - final grade: 1,36 (A) <br>
+                        Bachelor thesis: "On the relationship of humans and technology in Augmented Reality." <br>
+                        Major: Art Education <br>
+                        Minor: Media IT<br>
+                    <p>
+                    <hr class="mt40 mb20">
+                </div>
+
+                <h4>
+                    <span class="exp-badge badge">2009 - 2011 </span>
+                    Computer Science
+                    <br>
+                    <span class="job-title spaced text-light">LMU - Munich</span><br>
+                </h4>
+                <div>
+                    <p>
+                        Major: Computer Sience <br>
+                        Minor: Psychology<br>
+                    <p>
+                </div>
+            </div> <!-- end education steps-->
+        </div> <!-- end Education -->
+
+        <!-- start work experiece -->
+        <div class="row cv-section">
+            <div class="col-sm-4">
+                <h4>Work Experience</h4>
+            </div>
 
 
+            <!-- jobs are listed here -->
+            <div class="col-sm-8">
+                <!--  job 1 -->
+                <h4>
+                    <span class="exp-badge badge">2015 - 2016 </span>
+                    <a target="_blank" href="http://www.scandio.de">Scandio GmbH</a>
+                    <br>
 
-    <!-- Begin CV -->
-	<section id="cv" class="section-padding section-border-bottom">
-		<div class="container">
-			<!-- Title -->
-			<div class="row mb50">
-				<div class="col-md-8 col-md-offset-2">
-					<h2>Experience</h2>
-					<span class="no-margin-bottom divider divider-dark"></span>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
+                    <span class="job-title spaced text-light">Working student in software development</span>
+                </h4><!-- /.job title -->
 
-			<!-- Job 1 -->
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="icon-holder-circle mr30">
-						<span class="ion-social-twitter"></span>
-					</div><!-- /.icon -->
-
-					<h3>
-						Twitter
-						<span class="exp-badge badge">2013</span>
-						<span class="job-title spaced text-light"><em>Director</em></span>
-					</h3><!-- /.job title -->
-
-					<div class="job-description">
-						<p>Donec a posuere ligula. Nam sed velit id tellus laoreet pharetra in at sapien. Sed euismod, sem in euismod scelerisque, nisi purus posuere metus, id feugiat ex nibh ut libero. Nunc quis velit at sem pellentesque interdum. Aliquam at justo lectus. Aenean fringilla, sapien at suscipit dignissim, felis tortor pharetra justo, a condimentum sapien sem nec dolor.</p>
-						<p class="no-margin">Cras tristique vel ex vitae pretium. Sed et ligula faucibus, interdum justo eget, sollicitudin arcu. Donec fringilla mattis cursus. Nulla tincidunt vehicula lectus, in tempor nulla dignissim finibus. Fusce sollicitudin dolor at tortor vestibulum lacinia. Suspendisse eget pretium nisl.</p>
-						<hr class="mt40 mb20">
-					</div><!-- /.job description -->
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-
-			<!-- Job 2 -->
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="icon-holder-circle mr30">
-						<span class="ion-social-facebook"></span>
-					</div><!-- /.icon -->
-
-					<h3>
-						Facebook
-						<span class="exp-badge badge">2014</span>
-						<span class="job-title spaced text-light"><em>Designer</em></span>
-					</h3><!-- /.job title -->
-
-					<div class="job-description">
-						<p class="no-margin">Cras tristique vel ex vitae pretium. Sed et ligula faucibus, interdum justo eget, sollicitudin arcu. Donec fringilla mattis cursus. Nulla tincidunt vehicula lectus, in tempor nulla dignissim finibus. Fusce sollicitudin dolor at tortor vestibulum lacinia. Suspendisse eget pretium nisl.</p>
-						<hr class="mt40 mb20">
-					</div><!-- /.job description -->
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-
-			<!-- Job 3 -->
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="icon-holder-circle mr30">
-						<span class="ion-social-twitter"></span>
-					</div><!-- /.icon -->
-
-					<h3>
-						Github
-						<span class="exp-badge badge">2016</span>
-						<span class="job-title spaced text-light"><em>Engineer</em></span>
-					</h3><!-- /.job title -->
-
-					<div class="job-description">
-						<p class="no-margin">Proin rhoncus rutrum leo, a gravida dui elementum sit amet. Nunc non ornare arcu. Nunc dapibus urna sed magna fringilla pretium. Maecenas lacinia eget elit fringilla condimentum. Integer nulla orci, lobortis quis iaculis vel, ultrices quis lacus. Quisque aliquam arcu urna, vitae eleifend nibh congue id. Cras lectus felis, efficitur vel fermentum a, sollicitudin quis tortor. Mauris eu felis at nisl ultricies tempus ac non justo. Aliquam erat volutpat. Aenean dignissim ipsum nulla, ac ultricies orci tincidunt vel.</p>
-					</div><!-- /.job description -->
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section>
-	<!-- End CV -->
+                <div>
+                    <p>Design and implementation of Atlassian Add-Ons. Front-end Development for the Scandio Website.
+                        JIRA Administration for an enterprise customer.</p>
+                    <hr class="mt40 mb20">
+                </div><!-- /.job 1 -->
 
 
-	<!-- Begin Map -->
-	<div id="map"></div>
-	<!-- End Map -->
-
-	<!-- Begin Contact -->
-	<section id="contact" class="section-padding section-border-top">
-		<div class="container">
-			<!-- Title -->
-			<div class="row mb40">
-				<div class="col-xs-12 text-center">
-					<h2>Contact</h2>
-					<span class="divider divider-center divider-dark no-margin-bottom"></span>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-
-			<!-- Form -->
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<form data-toggle="validator" id="contactForm" name="contactForm">
-						<!-- Subject -->
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" data-error="This section is required."
-										id="msg_subject" placeholder="Subject *" required="" type="text">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-
-						<!-- Name -->
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" data-error="This section is required." id="name" placeholder="Your Name *" required="" type="text">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-
-						<!-- Email -->
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="controls">
-										<input class="email form-control" data-error="This section is required." id="email" placeholder="Email *" required="" type="email">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-
-						<!-- Message -->
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="controls">
-										<textarea class="form-control" data-error="This section is required." id="message" placeholder="Message *" required="" rows="5"></textarea>
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Confirmed -->
-						<div class="row">
-							<div class="col-sm-12 text-center">
-								<div id="msgSubmit" class="h4 hidden"></div> 
-							</div><!-- /.column -->
-						</div>
-
-						<!-- Button -->
-						<div class="row">
-							<div class="col-sm-12 text-center">
-								<button type="submit" id="submit" class="btn btn-primary btn-lg">Send</button>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-					</form><!-- /.form -->
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section>
-	<!-- End Contact -->
-
-	<!-- Start Contact Information -->
-	<section id="contact-information">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 text-center leftReveal">
-					<span class="dark-icon mb5 pe-7s-home"></span>
-					<h5 class="no-margin-bottom spaced">12 Street, New York, NY</h5>
-				</div><!-- /.column -->
-
-				<div class="col-sm-4 mt30-xs text-center bottomReveal">
-					<span class="dark-icon mb5 pe-7s-phone"></span>
-					<h5 class="no-margin-bottom spaced">+1 213 726 4431</h5>
-				</div><!-- /.column -->
-
-				<div class="col-sm-4 mt30-xs text-center topReveal">
-					<span class="dark-icon mb5 pe-7s-plug"></span>
-					<h5 class="no-margin-bottom spaced">info@rolla.com</h5>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section>
-	<!-- End Contact Information -->
-
-	<!-- Start Footer -->
-	<footer class="page-footer">
-		<div class="container">
-			<!-- Contact Information -->
-			<div class="row">
-				<div class="col-md-12 text-center">
-					&copy; 2016 <a href="#">Rolla</a>. All Rights Reserved.
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</footer>
-	<!-- End Footer -->
-
-	<!-- Javascript Files -->
-	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
-    <script type="text/javascript">
-		/* ---- Google Maps ---- */
-        function initMap() {
-            var mapOptions = {
-                zoom: 15,
-				zoomControl: false,
-				scaleControl: false,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
-                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-            };
-            var mapElement = document.getElementById('map');
-            var map = new google.maps.Map(mapElement, mapOptions);
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6700, -73.9400),
-                map: map,
-                title: 'Our Office!'
-            });
-        }
-    </script>
+                <!--  job 2 -->
+                <h4>
+                    <span class="exp-badge badge">2014</span>
+                    Clients: Kunsthalle München, Prix Jeunesse, Siemens AG <br>
+                    <span class="job-title spaced text-light">Freelance media artist</span>
+                </h4>
+                <div>
+                    <p>Conception and creation of a video installation,
+                        production of an image film.
+                        Filming, editing, painting and 2D animation</p>
+                    <hr class="mt40 mb20">
+                </div><!-- /.job 2 -->
 
 
+                <!--  job 3 -->
+                <h4>
+                    <span class="exp-badge badge">2013 - 2014 </span>
+                    <a href="www.br-online.de/jugend/izi/">
+                        International Central Institute for Youth and Educational Television</a>
+                    <br>
+
+                    <span class="job-title spaced text-light">Working student as editor and videographer</span>
+                </h4><!-- /.job title -->
+
+                <div>
+                    <p>Conception and creation of presentation videos for national and international conferences.
+                        Independent editing of documentaries in the field of children's television. Preparation and
+                        collocation of video material. Filming interviews and conferences with a SLR camera.</p>
+                    <hr class="mt40 mb20">
+                </div><!-- /.job 3 -->
 
 
+                <!-- job 4 -->
+                <h4>
+                    <span class="exp-badge badge">2013</span>
+                    <a href="www.experteer.de">EXPERTEER GmbH</a>
+                    <br>
 
-    <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/lib/form-validator.min.js"></script>
-	<script type="text/javascript" src="js/lib/scrollreveal.min.js"></script>
-	<script type="text/javascript" src="js/lib/parallax.min.js"></script>
-	<script type="text/javascript">
-		/* ---- Portfolio Isotope ---- */
-		$(document).ready(function(){
-			var $grid = $('.grid').isotope({
-			    layoutMode: 'masonry'
-			});
-			$('.filter-button-group').on('click', 'li', function() {
-			    var filterValue = $(this).attr('data-filter');
-			    $grid.isotope({
-			        filter: filterValue
-			    });
-			});
-			$(".filter-button-group").each(function(t, e) {
-			    var i = $(e);
-			    i.on("click", "li", function() {
-			        i.find(".active").removeClass("active"), $(this).addClass("active")
-			    })
-			});
-		});
-	</script>
+                    <span class="job-title spaced text-light">Working student as graphic designer with focus on web and UI</span>
+                </h4><!-- /.job title -->
+
+                <div>
+                    <p>Participation in the concept and design development of the internet portal. Development of design
+                        drafts for new product features. Creation of online advertising material according to the
+                        Experteer style guide.</p>
+                </div><!-- /.job 4 -->
+
+            </div>
+        </div> <!-- end work experience -->
+
+        <!--start exhibitons -->
+        <div class="row cv-section">
+            <div class="col-sm-4">
+                <h4>Exhibitions</h4>
+            </div>
+
+            <div class="col-sm-8">
+                <h4>
+                    <span class="exp-badge badge">2015</span>
+                    KupuKupu Gallery - Indonesia
+                    <br>
+                    <span class="job-title spaced text-light">"Do not Panic"</span>
+                </h4>
+                <div>
+                    <p> Sculpture - Group Project - Exploration of the fusion between traditional asian crafts and modern painting.
+                    <p>
+                    <hr class="mt40 mb20">
+                </div>
+
+                <h4>
+                    <span class="exp-badge badge">2014</span>
+                    Ars Electronica - Austria
+                    <br>
+                    <span class="job-title spaced text-light">"Senseparation"</span><br>
+                </h4>
+                <div>
+                    <p>Collaborative project discovering transpositional sensorial experiences, specifically the cross-border networking of people between virtual and real space.
+                    <p>
+                    <hr class="mt40 mb20">
+                </div>
+
+                <h4>
+                    <span class="exp-badge badge">2014 </span>
+                    Museum of Casts of Classical Statues - Germany
+                    <br>
+                    <span class="job-title spaced text-light">"Demoglied"</span><br>
+                </h4>
+                <div>
+                    <p>
+                        Acryl on canvas and digital printing
+                        Group Project -  A reflection on on the relationship between dictatorship and democracy.
+                    <p>
+                </div>
+            </div> <!-- end education steps-->
+        </div> <!-- end Exhibitions -->
 
 
-    <script id="gallery-item-template" type="text/x-handlebars-template">
-        <div class="col-md-4 {{classes}}">
-            <a href="images/{{image}}" class="zoom">
-                <div class="grid-item">
-                    <div class="overlay">
-                        <div class="inner-overlay">
-                            <h4>{{heading}}</h4>
-                            <span>{{description}}</span>
+    </div><!-- /.container -->
+</section>
+<!-- End CV -->
+
+<!-- Begin Contact -->
+<section id="contact" class="section-padding section-border-top">
+    <div class="container">
+        <!-- Title -->
+        <div class="row mb40">
+            <div class="col-xs-12 text-center">
+                <h2>Contact</h2>
+                <span class="divider divider-center divider-dark no-margin-bottom"></span>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+
+        <!-- Form -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form data-toggle="validator" id="contactForm" name="contactForm">
+                    <!-- Subject -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input class="form-control" data-error="This section is required."
+                                           id="msg_subject" placeholder="Subject *" required="" type="text">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div><!-- /.column -->
+                    </div><!-- /.row -->
+
+                    <!-- Name -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input class="form-control" data-error="This section is required." id="name"
+                                           placeholder="Your Name *" required="" type="text">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div><!-- /.column -->
+                    </div><!-- /.row -->
+
+                    <!-- Email -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input class="email form-control" data-error="This section is required." id="email"
+                                           placeholder="Email *" required="" type="email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div><!-- /.column -->
+                    </div><!-- /.row -->
+
+                    <!-- Message -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <textarea class="form-control" data-error="This section is required." id="message"
+                                              placeholder="Message *" required="" rows="5"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img src="images/{{image}}" class="img-responsive" alt="...">
+
+                    <!-- Confirmed -->
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div id="msgSubmit" class="h4 hidden"></div>
+                        </div><!-- /.column -->
+                    </div>
+
+                    <!-- Button -->
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" id="submit" class="btn btn-primary btn-lg">Send</button>
+                        </div><!-- /.column -->
+                    </div><!-- /.row -->
+                </form><!-- /.form -->
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+<!-- End Contact -->
+
+<!-- Start Contact Information -->
+<section id="contact-information">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center leftReveal">
+                <span class="dark-icon mb5 pe-7s-home"></span>
+                <h5 class="no-margin-bottom spaced">12 Street, New York, NY</h5>
+            </div><!-- /.column -->
+
+            <div class="col-sm-4 mt30-xs text-center bottomReveal">
+                <span class="dark-icon mb5 pe-7s-phone"></span>
+                <h5 class="no-margin-bottom spaced">+1 213 726 4431</h5>
+            </div><!-- /.column -->
+
+            <div class="col-sm-4 mt30-xs text-center topReveal">
+                <span class="dark-icon mb5 pe-7s-plug"></span>
+                <h5 class="no-margin-bottom spaced">info@rolla.com</h5>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+<!-- End Contact Information -->
+
+<!-- Start Footer -->
+<footer class="page-footer">
+    <div class="container">
+        <!-- Contact Information -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                &copy; 2016 <a href="#">Rolla</a>. All Rights Reserved.
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</footer>
+<!-- End Footer -->
+
+<!-- Javascript Files -->
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async
+        defer></script>
+<script type="text/javascript">
+    /* ---- Google Maps ---- */
+    function initMap() {
+        var mapOptions = {
+            zoom: 15,
+            zoomControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true,
+            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+            styles: [{
+                "featureType": "landscape",
+                "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
+            }, {
+                "featureType": "poi",
+                "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.highway",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.arterial",
+                "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
+            }, {
+                "featureType": "road.local",
+                "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
+            }, {
+                "featureType": "transit",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
+                "featureType": "water",
+                "elementType": "labels",
+                "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
+            }, {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
+            }]
+        };
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.6700, -73.9400),
+            map: map,
+            title: 'Our Office!'
+        });
+    }
+</script>
+
+
+<script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/lib/form-validator.min.js"></script>
+<script type="text/javascript" src="js/lib/scrollreveal.min.js"></script>
+<script type="text/javascript" src="js/lib/parallax.min.js"></script>
+<script type="text/javascript">
+    /* ---- Portfolio Isotope ---- */
+    $(document).ready(function () {
+        var $grid = $('.grid').isotope({
+            layoutMode: 'masonry'
+        });
+        $('.filter-button-group').on('click', 'li', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+        $(".filter-button-group").each(function (t, e) {
+            var i = $(e);
+            i.on("click", "li", function () {
+                i.find(".active").removeClass("active"), $(this).addClass("active")
+            })
+        });
+    });
+</script>
+
+
+<script id="gallery-item-template" type="text/x-handlebars-template">
+    <div class="col-md-4 {{classes}}">
+        <a href="images/{{image}}" class="zoom">
+            <div class="grid-item">
+                <div class="overlay">
+                    <div class="inner-overlay">
+                        <h4>{{heading}}</h4>
+                        <span>{{description}}</span>
+                    </div>
                 </div>
-            </a>
-        </div>
-    </script>
+                <img src="images/{{image}}" class="img-responsive" alt="...">
+            </div>
+        </a>
+    </div>
+</script>
 
-    <script src="js/templates.js"></script>
+<script src="js/templates.js"></script>
 
-    <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
