@@ -202,10 +202,9 @@
                     <span>Filter :</span>
                     <ul class="list-work-filter list-unstyled list-inline">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".web">Photography</li>
-                        <li data-filter=".print">Painting</li>
-                        <li data-filter=".product">Video</li>
-                        <li data-filter=".video">Interactive</li>
+                        <li data-filter=".painting">Painting</li>
+                        <li data-filter=".digital">Digital</li>
+                        <li data-filter=".interactive">Interactive</li>
 
                     </ul>
                 </div><!-- /.column -->
@@ -213,140 +212,42 @@
 
             <!-- Masonry Portfolio -->
             <div class="row grid">
-                <!-- Item 1 -->
-                <div class="col-md-4 product web">
-                    <a href="images/work/1.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Right &amp; Sand</h4>
-                                    <span>Product</span>
-                                </div>
-                            </div>
-                            <img src="images/work/1.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 2 -->
-                <div class="col-md-4 print product">
-                    <a href="images/work/2.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Polly Fox</h4>
-                                    <span>Print</span>
-                                </div>
-                            </div>
-                            <img src="images/work/2.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 3 -->
-                <div class="col-md-4 print product">
-                    <a href="images/work/3.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Roots</h4>
-                                    <span>Print</span>
-                                </div>
-                            </div>
-                            <img src="images/work/3.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 4 -->
-                <div class="col-md-4 print product">
-                    <a href="images/work/4.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Magazine</h4>
-                                    <span>Print</span>
-                                </div>
-                            </div>
-                            <img src="images/work/4.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 5 -->
-                <div class="col-md-4 web">
-                    <a href="images/work/5.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Bottle</h4>
-                                    <span>Product</span>
-                                </div>
-                            </div>
-                            <img src="images/work/5.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 6 -->
-                <div class="col-md-4 product web">
-                    <a href="images/work/6.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Triangle</h4>
-                                    <span>Web</span>
-                                </div>
-                            </div>
-                            <img src="images/work/6.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 7 -->
-                <div class="col-md-4 product web">
-                    <a href="images/work/7.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Hermes</h4>
-                                    <span>Web</span>
-                                </div>
-                            </div>
-                            <img src="images/work/7.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 8 -->
-                <div class="col-md-4 web">
-                    <a href="images/work/8.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Reasons</h4>
-                                    <span>Web</span>
-                                </div>
-                            </div>
-                            <img src="images/work/8.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
-
-                <!-- Item 9 -->
-                <div class="col-md-4 web video">
-                    <a href="images/work/9.jpg" class="zoom">
-                        <div class="grid-item">
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <h4>Cards</h4>
-                                    <span>Print</span>
-                                </div>
-                            </div>
-                            <img src="images/work/9.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </a>
-                </div><!-- /.column -->
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/1.jpeg"
+                     data-classes = "painting digital" data-heading="Demoglied" data-description="Dictatorship"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/2.jpeg"
+                     data-classes = "painting digital" data-heading="Demoglied" data-description="Democracy"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/3.jpeg"
+                     data-classes = "digital" data-heading="Preception" data-description="digital collage"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/4.jpeg"
+                     data-classes = "digital" data-heading="Preception 2" data-description="digital collage"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/5.jpeg"
+                     data-classes = "digital painting" data-heading="female" data-description="digital collage"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/7.jpg"
+                     data-classes = "digital painting" data-heading="image of man" data-description="video installation for Kunsthalle Munich"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/6.jpeg"
+                     data-classes = "digital painting" data-heading="female 2" data-description="digital collage"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/8.jpg"
+                     data-classes = "painting" data-heading="image of man" data-description="video installation for Kunsthalle Munich"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/9.jpg"
+                     data-classes = "digital" data-heading="image of man" data-description="video installation for Kunsthalle Munich"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/10.png"
+                     data-classes = "interactive digital" data-heading="senseparation" data-description="
+                     A collaborative project discovering transpositional sensorial experiences, specificly the cross-border networking of people between virtual and real space"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/11.png"
+                     data-classes = "interactive digital" data-heading="senseparation" data-description="
+                     A collaborative project discovering transpositional sensorial experiences, specificly the cross-border networking of people between virtual and real space"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/12.jpeg"
+                     data-classes = "painting" data-heading="Ocean" data-description="Acryl on Canvas"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/17.jpeg"
+                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/13.jpeg"
+                     data-classes = "painting" data-heading="female 3" data-description="Acryl on Paper"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/14.jpeg"
+                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/15.jpeg"
+                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
+                <div class="template-item" data-template="galleryItem" data-image="multimedia/16.jpeg"
+                     data-classes = "painting" data-heading="Portrait" data-description="Acryl on Canvas"></div>
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
@@ -376,148 +277,148 @@
 
             <!-- Masonry Portfolio -->
             <div class="row grid">
-                <div class="template-item" data-template="galleryItem" data-image="work/1.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/1.jpg"
                      data-classes = "asia humans bw" data-heading="Sulawesi" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/2.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/2.jpg"
                      data-classes = "asia humans" data-heading="Bali" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/3.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/3.jpg"
                      data-classes = "asia humans" data-heading="Night train to Bankog" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/4.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/4.jpg"
                      data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/5.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/5.jpg"
                      data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/7.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/7.jpg"
                      data-classes = "north-america nature" data-heading="Wild lake" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/8.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/8.jpg"
                      data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canda"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/9.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/9.jpg"
                      data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/10.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/10.jpg"
                      data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/12.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/12.jpg"
                      data-classes = "north-america nature" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/13.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/13.jpg"
                      data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/14.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/14.jpg"
                      data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/15.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/15.jpg"
                      data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/16.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/16.jpg"
                      data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/17.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/17.jpg"
                      data-classes = "north-america nature bw" data-heading="banff national park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/18.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/18.jpg"
                      data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/19.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/19.jpg"
                      data-classes = "central-america nature" data-heading="Playa Manuel Antonio" data-description="Costa Rica"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/20.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/20.jpg"
                      data-classes = "central-america humans bw"data-heading="San Jose" data-description="Costa Rica"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/21.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/21.jpg"
                      data-classes = "asia humans bw" data-heading="Mountain village" data-description="Indonesia"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/23.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/23.jpg"
                      data-classes = "asia nature" data-heading="mae hong son" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/24.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/24.jpg"
                      data-classes = "asia nature bw" data-heading="mae hong son" data-description="Thailand"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/25.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/25.jpg"
                      data-classes = "north-america nature bw" data-heading="Willmore Wilderness Park" data-description="Canada"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/26.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/26.jpg"
                      data-classes = "central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/27.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/27.jpg"
                      data-classes = "central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/28.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/28.jpg"
                      data-classes = "central-america humans bw" data-heading="Granada" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/29.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/29.jpg"
                      data-classes = "central-america humans bw" data-heading="Ometepe" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/30.jpg"
-                     data-classes = "central-america humans bw" data-heading="Mangua" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/31.jpg"
+                <div class="template-item" data-template="galleryItem" data-image="photography/30.jpg"
+                     data-classes = "central-america humans bw" data-heading="Managua" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/31.jpg"
                      data-classes = "central-america humans bw" data-heading="Madagalpa" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/32.jpg"
-                     data-classes = "central-america humans bw" data-heading="Madagalpa" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/33.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/36.jpg"
-                     data-classes = "central-america humans" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/37.jpg"
-                     data-classes = "central-america humans"data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/38.jpg"
-                     data-classes = "central-america nature" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/39.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/40.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/41.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/42.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/43.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Nicaragua"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/44.jpg"
-                     data-classes = "nature" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/45.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/47.jpg"
-                     data-classes = "central-america humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/48.jpg"
-                     data-classes = "central-america" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/49.jpg"
-                     data-classes = "asia nature bw" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/50.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/51.jpg"
-                     data-classes = "asia nature" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/52.jpg"
-                     data-classes = "asia humans bw" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/53.jpg"
-                     data-classes = "asia bw" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/54.jpg"
-                     data-classes = "asia humans"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/56.jpg"
-                     data-classes = "asia bw"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/57.jpg"
-                     data-classes = "asia nature"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/58.jpg"
-                     data-classes = "asia"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/59.jpg"
-                     data-classes = "asia humans"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/60.jpg"
-                     data-classes = "asia"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/61.jpg"
-                     data-classes = "asia"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/62.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/63.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/64.jpg"
-                     data-classes = "asia" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/65.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/66.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/67.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/82.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/68.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/70.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/71.jpg"
-                     data-classes = "central-america nature" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/72.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/73.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/74.jpg"
-                     data-classes = "central america nature bw"data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/75.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/79.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/80.jpg"
-                     data-classes = "asia" data-heading="Cards" data-description="Print"></div>
-                <div class="template-item" data-template="galleryItem" data-image="work/84.jpg"
-                     data-classes = "asia humans" data-heading="Cards" data-description="Print"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/32.jpg"
+                     data-classes = "central-america humans bw" data-heading="Mountain Village" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/33.jpg"
+                     data-classes = "central-america" data-heading="Madagalpa" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/36.jpg"
+                     data-classes = "central-america humans" data-heading="Leon" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/37.jpg"
+                     data-classes = "central-america humans"data-heading="Granada" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/38.jpg"
+                     data-classes = "central-america nature" data-heading="Ometepe" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/39.jpg"
+                     data-classes = "central-america" data-heading="Granada" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/40.jpg"
+                     data-classes = "central-america" data-heading="Granada" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/41.jpg"
+                     data-classes = "central-america" data-heading="Granada" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/42.jpg"
+                     data-classes = "central-america" data-heading="Bus Station" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/43.jpg"
+                     data-classes = "central-america" data-heading="Antigua" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/44.jpg"
+                     data-classes = "nature" data-heading="Alps" data-description="Germany"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/45.jpg"
+                     data-classes = "central-america" data-heading="Leon" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/47.jpg"
+                     data-classes = "central-america humans" data-heading="Leon" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/48.jpg"
+                     data-classes = "central-america" data-heading="Leon" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/49.jpg"
+                     data-classes = "asia nature bw" data-heading="mae hong son" data-description="Thailand"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/50.jpg"
+                     data-classes = "asia humans" data-heading="Chantaburi" data-description="Tahiland"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/51.jpg"
+                     data-classes = "asia nature" data-heading="Sulawesi" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/52.jpg"
+                     data-classes = "asia humans bw" data-heading="Mountain village" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/53.jpg"
+                     data-classes = "asia bw" data-heading="Chi Path" data-description="Cambodia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/54.jpg"
+                     data-classes = "asia humans"data-heading="Chi Path" data-description="Cambodia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/56.jpg"
+                     data-classes = "asia bw"data-heading="Tak hek" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/57.jpg"
+                     data-classes = "asia nature"data-heading="Tak hek" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/58.jpg"
+                     data-classes = "asia"data-heading="Togian Islands" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/59.jpg"
+                     data-classes = "asia humans"data-heading="Sulawesi" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/60.jpg"
+                     data-classes = "asia" data-heading="Tak hek" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/61.jpg"
+                     data-classes = "asia" data-heading="Mountain village" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/62.jpg"
+                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/63.jpg"
+                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/64.jpg"
+                     data-classes = "asia" data-heading="Luang Prabang" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/65.jpg"
+                     data-classes = "asia humans" data-heading="on a Boat" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/66.jpg"
+                     data-classes = "asia humans" data-heading="Togian Islands" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/67.jpg"
+                     data-classes = "asia humans" data-heading="animal transport" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/82.jpg"
+                     data-classes = "asia humans" data-heading="buffalo market" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/68.jpg"
+                     data-classes = "asia humans" data-heading="traditional funeral" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/70.jpg"
+                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/71.jpg"
+                     data-classes = "central-america nature" data-heading="Crater lake" data-description="Costa Rica"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/72.jpg"
+                     data-classes = "asia humans" data-heading="Mountain village" data-description="Laos"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/73.jpg"
+                     data-classes = "asia humans" data-heading="Chiang Mai" data-description="Thailand"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/74.jpg"
+                     data-classes = "central america nature bw" data-heading="Playa Las Penitas" data-description="Nicaragua"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/75.jpg"
+                     data-classes = "asia humans" data-heading="at traditional funeral" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/79.jpg"
+                     data-classes = "asia humans" data-heading="buffalo market" data-description="Indonesia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/80.jpg"
+                     data-classes = "asia" data-heading="Siem Riep" data-description="Cambodia"></div>
+                <div class="template-item" data-template="galleryItem" data-image="photography/84.jpg"
+                     data-classes = "asia humans" data-heading="at traditional funeral" data-description="Indonesia"></div>
 
 
 
@@ -852,7 +753,12 @@
             });
         }
     </script>
-	<script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
+
+
+
+
+
+    <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/lib/form-validator.min.js"></script>
 	<script type="text/javascript" src="js/lib/scrollreveal.min.js"></script>
@@ -877,6 +783,7 @@
 			});
 		});
 	</script>
+
 
     <script id="gallery-item-template" type="text/x-handlebars-template">
         <div class="col-md-4 {{classes}}">
