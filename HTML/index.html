@@ -21,7 +21,7 @@
     <script type="text/javascript">
         Royal_Preloader.config({
             mode: 'number',
-            showProgress: false,
+            showProgress: true,
             background: '#fff'
         });
     </script>
@@ -145,41 +145,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <h5 class="heading-1 mb20">Skills</h5>
                         <div class="progress-bars-holder">
-                            <!-- Bar #1 -->
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 50%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div><!-- /.bar -->
-                            <small class="text-light">Java</small>
-
-                            <!-- Bar #2 -->
-                            <div class="progress mt15">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 70%;">
-                                    <span class="sr-only">82% Complete</span>
-                                </div>
-                            </div><!-- /.bar -->
-                            <small class="text-light">HTML/CSS/Javascript</small>
-
-                            <!-- Bar #3 -->
-                            <div class="progress mt15">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 80%;">
-                                    <span class="sr-only">95% Complete</span>
-                                </div>
-                            </div><!-- /.bar -->
-                            <small class="text-light">Photoshop</small>
-
-                            <!-- Bar #4 -->
-                            <div class="progress mt15">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 60%;">
-                                    <span class="sr-only">60% Complete</span>
-                                </div>
-                            </div><!-- /.bar -->
-                            <small class="text-light">Premiere Pro</small>
+                            <div class="template-item" data-template="progressBar" data-valuenow="50"
+                                 data-text="Java" data-complete="90" data-classes=""></div>
+                            <div class="template-item" data-template="progressBar" data-valuenow="70"
+                                 data-text="HTML/CSS/Javascript" data-complete="82" data-classes="mt15"></div>
+                            <div class="template-item" data-template="progressBar" data-valuenow="80"
+                                 data-text="Photoshop" data-complete="95" data-classes="mt15"></div>
+                            <div class="template-item" data-template="progressBar" data-valuenow="60"
+                                 data-text="Premiere Pro" data-complete="60" data-classes="mt15"></div>
                         </div><!-- /.progress bars holder -->
                     </div>
 
@@ -773,83 +746,11 @@
 
 <!-- Javascript Files -->
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async
-        defer></script>
-<script type="text/javascript">
-    /* ---- Google Maps ---- */
-    function initMap() {
-        var mapOptions = {
-            zoom: 15,
-            zoomControl: false,
-            scaleControl: false,
-            scrollwheel: false,
-            disableDoubleClickZoom: true,
-            center: new google.maps.LatLng(40.6700, -73.9400), // New York
-            styles: [{
-                "featureType": "landscape",
-                "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
-            }, {
-                "featureType": "poi",
-                "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
-            }, {
-                "featureType": "road.highway",
-                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
-            }, {
-                "featureType": "road.arterial",
-                "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
-            }, {
-                "featureType": "road.local",
-                "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
-            }, {
-                "featureType": "transit",
-                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
-            }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
-                "featureType": "water",
-                "elementType": "labels",
-                "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
-            }, {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
-            }]
-        };
-        var mapElement = document.getElementById('map');
-        var map = new google.maps.Map(mapElement, mapOptions);
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.6700, -73.9400),
-            map: map,
-            title: 'Our Office!'
-        });
-    }
-</script>
-
-
 <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="js/lib/form-validator.min.js"></script>
 <script type="text/javascript" src="js/lib/scrollreveal.min.js"></script>
 <script type="text/javascript" src="js/lib/parallax.min.js"></script>
-<script type="text/javascript">
-    /* ---- Portfolio Isotope ---- */
-    $(document).ready(function () {
-        var $grid = $('.grid').isotope({
-            layoutMode: 'masonry'
-        });
-        $('.filter-button-group').on('click', 'li', function () {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-        $(".filter-button-group").each(function (t, e) {
-            var i = $(e);
-            i.on("click", "li", function () {
-                i.find(".active").removeClass("active"), $(this).addClass("active")
-            })
-        });
-    });
-</script>
-
 
 <script id="gallery-item-template" type="text/x-handlebars-template">
     <div class="col-md-4 {{classes}}">
@@ -861,10 +762,20 @@
                         <span>{{description}}</span>
                     </div>
                 </div>
-                <img src="images/{{image}}" class="img-responsive" alt="...">
+                <img src="images/preview/{{image}}" class="img-responsive" alt="...">
             </div>
         </a>
     </div>
+</script>
+
+<script id="progress-bar-template" type="text/x-handlebars-template">
+    <div class="progress {{classes}}">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{valuenow}}" aria-valuemin="0"
+             aria-valuemax="100" style="width: {{valuenow}}%;">
+            <span class="sr-only">{{complete}}% Complete</span>
+        </div>
+    </div><!-- /.bar -->
+    <small class="text-light">{{text}}</small>
 </script>
 
 <script src="js/templates.js"></script>

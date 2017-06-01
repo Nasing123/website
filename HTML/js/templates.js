@@ -1,7 +1,12 @@
 (function() {
 
+	function compile(templateId) {
+		return Handlebars.compile($('#'+templateId).html());
+	}
+
 	var templates = {
-		galleryItem: Handlebars.compile($('#gallery-item-template').html())
+		galleryItem: compile('gallery-item-template'),
+		progressBar: compile('progress-bar-template')
 	};
 
 	$('.template-item').each(function() {
