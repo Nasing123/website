@@ -1,45 +1,4 @@
 (function() {
-	function submitForm() {
-		var name = $("#name").val();
-		var email = $("#email").val();
-		var message = $("#message").val();
-		$.ajax({
-			type: "POST",
-			url: "php/contact.php",
-			data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject +
-			"&message=" + message,
-			success: function(text) {
-				if (text == "success") {
-					formSuccess();
-				} else {
-					formError();
-					submitMSG(false, text);
-				}
-			}
-		});
-	}
-
-	function formSuccess() {
-		$("#contactForm")[0].reset();
-		submitMSG(true, "Message Submitted!")
-	}
-
-	function formError() {
-		$("#contactForm").removeClass().addClass('shake animated').one(
-			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-			function() {
-				$(this).removeClass();
-			});
-	}
-
-	function submitMSG(valid, msg) {
-		if (valid) {
-			var msgClasses = "h4 text-success";
-		} else {
-			var msgClasses = "h4 text-danger";
-		}
-		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	}
 
 	function triggerReveals() {
 		sr.reveal('.bottomReveal', {
@@ -64,7 +23,7 @@
 		}).reveal('.rotateTopReveal', {
 			origin: 'top',
 			rotate: { x: 90 }
-		})
+		});
 
 		sr.reveal('.scaleReveal', {
 			origin: 'top',
@@ -81,82 +40,22 @@
 		}, speed);
 	}
 
-	$(document).ready(function () {
-		var $grid = $('.grid').isotope({
-			layoutMode: 'masonry'
-		});
-		$('.filter-button-group').on('click', 'li', function () {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({
-				filter: filterValue
-			});
-		});
-		$(".filter-button-group").each(function (t, e) {
-			var i = $(e);
-			i.on("click", "li", function () {
-				i.find(".active").removeClass("active"), $(this).addClass("active")
-			})
-		});
-	});
-	
-    /* ---- contact form ---- */
-	$("#contactForm").validator().on("submit", function(event) {
-		if (event.isDefaultPrevented()) {
-			formError();
-			submitMSG(false, "Did you fill in the form properly?");
-		} else {
-			event.preventDefault();
-			submitForm();
-		}
-	});
-
-    /* ---- our work gallery ---- */
-	$('#photography').magnificPopup({
-		delegate: 'a.zoom',
-		type: 'image',
-		fixedContentPos: false,
-		removalDelay: 300,
-		mainClass: 'mfp-fade',
-		gallery: {
-			enabled: true,
-			preload: [0,2]
-		}
-	});
-
-
-	$('#mixed-media').magnificPopup({
-		delegate: 'a.zoom',
-		type: 'image',
-		fixedContentPos: false,
-		removalDelay: 300,
-		mainClass: 'mfp-fade',
-		gallery: {
-			enabled: true,
-			preload: [0,2]
-		}
-	});
-
-    /* ---- popup image ---- */
-	$('.popup-img').magnificPopup({
-		type: 'image',
-		removalDelay: 300,
-		mainClass: 'mfp-fade'
-	});
-
-    /* ---- popup video ---- */
-	$(document).ready(function() {
-		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
+	function initMagnificPopup(id) {
+		$('#'+id).magnificPopup({
+			delegate: 'a.zoom',
+			type: 'image',
+			fixedContentPos: false,
+			removalDelay: 300,
 			mainClass: 'mfp-fade',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false
+			gallery: {
+				enabled: true,
+				preload: [0,2]
+			}
 		});
-	});
+	}
 
-    /* ---- nav smooth scroll ---- */
-	$(document).ready(function() {
+	/* ---- nav smooth scroll ---- */
+	function initSmoothScroll() {
 		$('.scroll-link').on('click', function(event) {
 			event.preventDefault();
 			var sectionID = $(this).attr("data-id");
@@ -168,64 +67,72 @@
 				scrollTop: 0
 			}, 1200);
 		});
-	});
+	}
 
-
-    /* ---- navbar adjust on scroll ---- */
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-		if (scroll >= 70) {
-			$('.navbar').addClass('navbar-switch')
-		} else {
-			$('.navbar').removeClass('navbar-switch')
-		}
-	});
-
-
-    /* ---- animations ---- */
-	if (typeof sr == 'undefined') {
-		window.sr = ScrollReveal({
-			duration: 1600,
-			delay: 50
+	function initIsotope() {
+		var $grid = $('.grid').isotope({
+			layoutMode: 'masonry'
+		});
+		var $filterButtonGroup = $('.filter-button-group');
+		$filterButtonGroup.on('click', 'li', function () {
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({
+				filter: filterValue
+			});
+		});
+		$filterButtonGroup.each(function (t, e) {
+			var i = $(e);
+			i.on("click", "li", function () {
+				i.find(".active").removeClass("active"), $(this).addClass("active")
+			})
 		});
 	}
-	Royal_Preloader.config({
-		onComplete: function () {
-			triggerReveals();
-		}
-	});
 
+	/* ---- navbar adjust on scroll ---- */
+	function initNavbarScroll() {
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 70) {
+				$('.navbar').addClass('navbar-switch')
+			} else {
+				$('.navbar').removeClass('navbar-switch')
+			}
+		});
+	}
 
-    /* ---- close mobile nav on click ---- */
-	$(document).on('click','.navbar-collapse.in',function(e) {
-		if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-			$(this).collapse('hide');
-		}
-	});
-
-
-	/* ---- rotater text ---- */
-	(function() {
-		var current = 1;
-		var height = jQuery('.ticker').height();
-		var numberDivs = jQuery('.ticker').children().length;
-		var first = jQuery('.ticker h2:nth-child(1)');
-		setInterval(function() {
-			var number = current * -height;
-			first.css('margin-top', number + 'px');
-			if (current === numberDivs) {
-				first.css('margin-top', '0px');
-				current = 1;
-			} else current++;
-		}, 2500);
-
-        /* ---- nav main link hover dropdown ---- */
-		if ( $(window).width() >= 767) {
-			$('.dropdown').hover(function(){
-				$('.dropdown-toggle', this).trigger('click');
+	/* ---- animations ---- */
+	function initAnimations() {
+		if (typeof sr == 'undefined') {
+			window.sr = ScrollReveal({
+				duration: 1600,
+				delay: 50
 			});
 		}
-	}());
+		Royal_Preloader.config({
+			onComplete: function () {
+				triggerReveals();
+			}
+		});
+	}
+
+	/* ---- close mobile nav on click ---- */
+	function initMobileNav() {
+		$(document).on('click','.navbar-collapse.in',function(e) {
+			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+				$(this).collapse('hide');
+			}
+		});
+	}
+
+	$(document).ready(function() {
+		initNavbarScroll();
+		initAnimations();
+		initMobileNav();
+		initMagnificPopup('#photography');
+		initMagnificPopup('#mixed-media');
+		initSmoothScroll();
+		initIsotope();
+	});
 
 }());
 
