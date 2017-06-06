@@ -124,7 +124,7 @@
 		});
 	}
 
-	$(window).load(function() {
+	$(document).ready(function() {
 		initNavbarScroll();
 		initAnimations();
 		initMobileNav();
