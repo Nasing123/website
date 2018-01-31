@@ -1055,7 +1055,7 @@ blockquote .small, blockquote footer, blockquote small {
     .navbar-nav .open .dropdown-menu { padding:0; }
     .progress-bars-holder { margin-top: 40px; }
     .section-padding-work { padding: 80px 0 60px 0; }
-    .navbar { padding-top: 0; max-height: max-content; }
+    .navbar { padding-top: 0; max-height: 100%; }
     body { padding-top: 80px; }
     body.body-spacing-top { padding-top:80px; }
     .ticker h2 { font-size: 27px; }
