@@ -1056,6 +1056,7 @@ blockquote .small, blockquote footer, blockquote small {
     .progress-bars-holder { margin-top: 40px; }
     .section-padding-work { padding: 80px 0 60px 0; }
     .navbar { padding-top: 0; max-height: 100%; }
+    .navbar-brand { padding-left: 15px }
     body { padding-top: 80px; }
     body.body-spacing-top { padding-top:80px; }
     .ticker h2 { font-size: 27px; }
@@ -1065,8 +1066,8 @@ blockquote .small, blockquote footer, blockquote small {
 }
 
 @media (min-width: 768px) {
-    .navbar-brand {margin-left: -25px !important; }
-}
+    .navbar-brand {margin-left: 0px !important; }
+
 
 
 @media (min-width: 768px) and (max-width:992px) {
