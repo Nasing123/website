@@ -311,6 +311,9 @@ a:focus {
     height: 80px;
     font-size: 36px;
     line-height: 50px;
+    width: 50px;
+    padding: 5px 0px 0px 0px;
+
 }
 
 .navbar-tagline {
@@ -318,10 +321,15 @@ a:focus {
 }
 
 .navbar {
-    min-height: 80px;
+    max-height: 60px;
     margin-bottom: 0;
     border: none;
 }
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+}
+
 
 .navbar-spacing-top-fixed {
     padding-top: 50px;
@@ -1047,7 +1055,7 @@ blockquote .small, blockquote footer, blockquote small {
     .navbar-nav .open .dropdown-menu { padding:0; }
     .progress-bars-holder { margin-top: 40px; }
     .section-padding-work { padding: 80px 0 60px 0; }
-    .navbar { padding-top: 0; }
+    .navbar { padding-top: 0; max-height: max-content; }
     body { padding-top: 80px; }
     body.body-spacing-top { padding-top:80px; }
     .ticker h2 { font-size: 27px; }
@@ -1055,6 +1063,11 @@ blockquote .small, blockquote footer, blockquote small {
     .top-content-carousel { padding: 0 40px; border-left: 0; }
     .navbar-spacing-top-static { padding-bottom: 0; }
 }
+
+@media (min-width: 768px) {
+    .navbar-brand {margin-left: -25px !important; }
+}
+
 
 @media (min-width: 768px) and (max-width:992px) {
     .mt10-sm { margin-top:10px; }
